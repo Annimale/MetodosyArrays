@@ -84,6 +84,18 @@ public class metodos1 {
         
     }
         
+    private static String []obtenerArrCad5Vocales (String Array[]){
+        
+        String[] acumulaTor=new String[200];
+        for (int i = 0; i < Array.length; i++) {
+            if (Array[i].contains("a")|| Array[i].contains("A")&& Array[i].contains("e")|| Array[i].contains("E") && Array[i].contains("o")|| Array[i].contains("O") && Array[i].contains("i")|| Array[i].contains("I") && Array[i].contains("u")|| Array[i].contains("U") ){
+                acumulaTor[i]=Array[i];
+            }
+            
+            
+        }
+        return acumulaTor;
+    }
     
     
     
