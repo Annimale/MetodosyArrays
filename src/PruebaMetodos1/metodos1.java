@@ -27,7 +27,7 @@ public class metodos1 {
         }
        return "["+aux+"]";
     }
-    private static int [] completarArray3(int Array[]){
+    private static int [] completarArray3(int Array[]){//EJERRCICIO 3  RELLENAR ARRAY DE NUMEROS PARES EN FUNCION DE LA LONGITUD  DE SU ARRAY
         int cont=0;
         for (int i = 0; cont < Array.length; i++) {
             int aux= (int)(Math.random()*100);//Hacemos que aux valga cada vez un numero
@@ -38,6 +38,51 @@ public class metodos1 {
         }
             return Array;
         }
+    
+    private static int obtenerSumaArray(int Array []){//SUMAR LOS VALORES DE UN ARRAY INT
+        
+        int aux=0;
+        
+        for (int i = 0; i < Array.length; i++) {
+            aux=Array[i]+aux;
+        }
+        return aux;
+    }
+    
+    private static double [] arrayPotencias2(int numeroTotal){
+        double [] Arraye=new double [numeroTotal];//Le asignamos al Array que coja la longitud que nosotros queramos introduciendolo en el método
+        
+            
+        for (int i = 1; i < Arraye.length; i++) {//Empezamos desde la segunda posición, en este caso 1.
+            Arraye[i]=(Math.pow(2, i));//Como es 2^i lo ponemos asi
+            
+        }
+        
+        return Arraye;
+    }
+    
+    private static void arrayCadenas(String Array[]){
+        String aux="";
+        
+        for (int i = 0; i < Array.length; i++) {
+            aux= Array[i]+", "+aux;
+        }
+        
+        System.out.println(aux);
+    }
+    
+    private static void obtenerSumaLongCadArray(String Array[]){
+        int aux=0;
+        for (int i = 0; i < Array.length; i++) {
+            aux=Array[i].length()+aux;//en Array hay que indicar el elemento en este caso [i] y como queremos saber la longitude la cadena de ese elemento, ya que es un String, el metodo es con parentesis .length()
+            //Si fuese sin parentesis sabriamos la longitud del array no del vector.
+            
+            
+        }
+        
+        System.out.println(aux);
+        
+    }
         
     
     
@@ -46,6 +91,7 @@ public class metodos1 {
         
         int[]Arraya={1,2,3,4,5,6,7};
         int[]Arrayo= new int[20];
+        String[]ArrayC={"Manolo","Pepe","Juanito","Manolito"};
         
         mostrarArrayPantalla2(Arraya);
         System.out.println("\n");
@@ -53,7 +99,12 @@ public class metodos1 {
         System.out.println("\n");
        // completarArray3(Arrayo);
         mostrarArrayPantalla2(completarArray3(Arrayo));
-        
+        System.out.println("\n");
+        System.out.println(obtenerSumaArray(Arraya));
+        System.out.println("\n");
+        arrayCadenas(ArrayC);
+        System.out.println("\n");
+        obtenerSumaLongCadArray(ArrayC);
 
     }
 }
