@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package PruebaMetodos1;
+import java.util.Arrays;
+import java.util.Collections;
 
 /**
  *
@@ -84,7 +86,7 @@ public class metodos1 {
         
     }
         
-    private static String []obtenerArrCad5Vocales (String Array[]){
+    private static String []obtenerArrCad5Vocales (String Array[]){//EJERCICIO 9
         
         String[] acumulaTor=new String[200];
         for (int i = 0; i < Array.length; i++) {
@@ -95,6 +97,18 @@ public class metodos1 {
             
         }
         return acumulaTor;
+    }
+    
+    private static void obtenerArrayOrdAlfab(String Array[]){
+        
+        Arrays.sort(Array, String.CASE_INSENSITIVE_ORDER);
+        
+        for (int i = 0; i < Array.length; i++) {
+            System.out.print(Array[i]+", ");
+            
+        }
+        
+        
     }
     
     
@@ -117,6 +131,8 @@ public class metodos1 {
         arrayCadenas(ArrayC);
         System.out.println("\n");
         obtenerSumaLongCadArray(ArrayC);
+        System.out.println("\n");
+        obtenerArrayOrdAlfab(ArrayC);
 
     }
 }
