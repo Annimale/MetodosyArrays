@@ -12,6 +12,19 @@ import java.util.Arrays;
  */
 public class PruebaMetodos2 {
 
+    
+    private static void MostrarMatrizStringDeAsteriscos(String[][] Matriz){
+        for (int i = 0; i < Matriz.length; i++) {
+            for (int j = 0; j <Matriz[i].length ; j++) {
+                //System.out.println(Matriz[i][j]);
+            }
+            
+        }
+    }
+    
+    
+    
+    
     private static void rellenarMatrizSecuencia2D(int Matriz[][]) {
 
         int valor = 0;
@@ -198,10 +211,10 @@ public class PruebaMetodos2 {
         System.out.println("***************************");
         System.out.println(matrizIntComoString(Matrize));
         System.out.println("------------------------");
-        System.out.println(Arrays.toString(rellenarMatrizAsteriscos(6)));
+        MostrarMatrizStringDeAsteriscos(rellenarMatrizAsteriscos(6));
         System.out.println("------------------------");
         System.out.println(obtenerSumaElementosMatriz(Matrizo));
-        System.out.println("----------A--------------");
+        System.out.println("------------------------");
         mostrarMatrizID(obtenerDiagonales(Matriza));
         System.out.println("------------------------");
         mostrarMatrizID(obtenerLaterales(Matriza));

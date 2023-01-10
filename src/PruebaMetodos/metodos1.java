@@ -4,8 +4,7 @@
  */
 package PruebaMetodos;
 import java.util.Arrays;
-import java.util.Collections;
-
+//
 /**
  *
  * @author skril
@@ -19,7 +18,7 @@ public class metodos1 {
         }
         
     }
-    
+    //SI ES STATIC NO SE TIENE QUE CREAR UN OBJETO POR LO QUE PUEDES LLAMAR AL METODO SIN TENER UN OBJETO
     private static String obtenerArrayComoString(int []Array){//METODO PARA CONVERTIR UN ARRAY INT A STRING
         // LO QUE HACE ES ACUMULAR EL VALOR DE LOS INTs del ARRAY EN UNA VARIABLE AUXILIAR DE TIPO STRING Y LUEGO DEVUELVE ESA CADENA
         String aux="";
@@ -32,8 +31,8 @@ public class metodos1 {
     private static int [] completarArray3(int Array[]){//EJERRCICIO 3  RELLENAR ARRAY DE NUMEROS PARES EN FUNCION DE LA LONGITUD  DE SU ARRAY
         int cont=0;
         for (int i = 0; cont < Array.length; i++) {
-            int aux= (int)(Math.random()*100);//Hacemos que aux valga cada vez un numero
-            if(aux%2==0){
+            int aux= (int)(Math.random()*100);//Hacemos que aux valga cada vez un numero, ES NECESARIO CREAR UNA VARIABLE AUX porque sino cogerá los valores de i los cuales son cont (son cont para que me recorrá todas las posiciones del Array independientemente de si es par o impar
+            if(aux%2==0){// Condición para que sea par
             Array[cont]=aux; //Le asignamos a cont el valor de aux y se lo metemos al array
             cont++;//Aumentamos en 1 la posicion de contador para que llegue hasta el length del array puesto en el for
         }    
