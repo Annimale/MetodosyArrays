@@ -11,6 +11,13 @@ import java.util.Arrays;
  */
 public class metodos1 {
     
+    private static void MostrarArrayString(String[] Array) {
+        for (int i = 0; i < Array.length; i++) {
+            System.out.print("| " + Array[i] + " |");
+
+        }
+    }
+    
     private static void mostrarArrayPantalla2 (int Array[]){// METODO PARA VISUALIZAR LOS ELEMENTOS DE UN ARRAY/ VECTOR SEPARADOS POR UNA COMA
         for (int i = 0; i < Array.length; i++) {
             System.out.print(Array[i]);
@@ -86,16 +93,23 @@ public class metodos1 {
     }
         
     private static String []obtenerArrCad5Vocales (String Array[]){//EJERCICIO 9
+        int contvoc=0;
+        String[] acumulaTor=new String[Array.length];
         
-        String[] acumulaTor=new String[200];
+        
         for (int i = 0; i < Array.length; i++) {
-            if (Array[i].contains("a")|| Array[i].contains("A")&& Array[i].contains("e")|| Array[i].contains("E") && Array[i].contains("o")|| Array[i].contains("O") && Array[i].contains("i")|| Array[i].contains("I") && Array[i].contains("u")|| Array[i].contains("U") ){
-                acumulaTor[i]=Array[i];
+            if ((Array[i].contains("a")|| Array[i].contains("A"))&& (Array[i].contains("e")|| Array[i].contains("E")) && (Array[i].contains("o")|| Array[i].contains("O")) && (Array[i].contains("i")|| Array[i].contains("I")) && (Array[i].contains("u")|| Array[i].contains("U")) ){
+                acumulaTor[contvoc++]=Array[i];
+                
             }
-            
+        }
+        String[] finaL=new String[contvoc];
+        for (int i = 0; i < contvoc; i++) {
+            finaL[i]=acumulaTor[i];
             
         }
-        return acumulaTor;
+        
+        return finaL;
     }
     
     private static void obtenerArrayOrdAlfab(String Array[]){
@@ -116,7 +130,7 @@ public class metodos1 {
         
         int[]Arraya={1,2,3,4,5,6,7};
         int[]Arrayo= new int[20];
-        String[]ArrayC={"Manolo","Pepe","Juanito","Manolito"};
+        String[]ArrayC={"Manolo","Pepe","Juanito","Manolito","Murcielago","Acueductoi"};
         
         mostrarArrayPantalla2(Arraya);
         System.out.println("\n");
@@ -132,6 +146,9 @@ public class metodos1 {
         obtenerSumaLongCadArray(ArrayC);
         System.out.println("\n");
         obtenerArrayOrdAlfab(ArrayC);
+        System.out.println("\n");
+        MostrarArrayString(obtenerArrCad5Vocales(ArrayC));
+        
 
     }
 }
