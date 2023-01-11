@@ -99,16 +99,13 @@ public class metodos1 {
         
         for (int i = 0; i < Array.length; i++) {
             if ((Array[i].contains("a")|| Array[i].contains("A"))&& (Array[i].contains("e")|| Array[i].contains("E")) && (Array[i].contains("o")|| Array[i].contains("O")) && (Array[i].contains("i")|| Array[i].contains("I")) && (Array[i].contains("u")|| Array[i].contains("U")) ){
-                acumulaTor[contvoc++]=Array[i];
-                
+                acumulaTor[contvoc++]=Array[i];//Ponemos contvoc++ en el elemento de acumulaTor para que me aumente y asigne a la posicion de contvoc la palabra que contenga las 5  vocales, por eso Acueductoi sale en la posicion 0 y Murcielago en la posicion 1
             }
         }
         String[] finaL=new String[contvoc];
         for (int i = 0; i < contvoc; i++) {
             finaL[i]=acumulaTor[i];
-            
         }
-        
         return finaL;
     }
     
