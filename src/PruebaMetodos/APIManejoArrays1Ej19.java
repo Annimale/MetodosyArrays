@@ -7,7 +7,35 @@ package PruebaMetodos;
 import java.util.Arrays;
 
 /**
- *
+ *19.Escribe una clase, de nombre APIManejoArrays1, cuyo método main()
+implemente un programa que lleve a cabo las siguiente acciones:
+a) Declarar y construir un array de 30 enteros, de nombre arrInt1. Hacer
+que el array almacene en las 10 primeras posiciones 10 ceros, en las 10
+siguientes 10 unos y en las 10 últimas de nuevo 10 ceros. Mostrar el
+contenido del array.
+b) Declarar y construir un array de 6 caracteres, de nombre arrChar. El
+array almacenará en la primera mitad de las posiciones el carácter a y en
+segunda mitad el carácter b. Mostrar el contenido del array.
+c) Declarar y construir un array de 10 enteros, de nombre arrInt2. Hacer
+que el array almacene en sus posiciones los dígitos del 9 al 0 para
+mostrar después su contenido. Ordenar el array ascendentemente y
+mostrar de nuevo su contenido.
+20.Escribe una clase, de nombre APIManejoArrays1, cuyo método main()
+implemente un programa que lleve a cabo las siguientes acciones:
+a) Declarar y construir un array de cadenas de objetos String de nombre
+arrStr que contenga las siguientes cadenas: “impresora”, “peto”, “mar”,
+“orilla” y “Orihuela”
+b) Ordenar el array arrStr alfabéticamente teniendo en cuenta que las
+letras mayúsculas figuran en el código Unicode antes que las minúsculas.
+Mostrar por pantalla el resultado de la ordenación.
+c) Ordenar el array arrStr alfabéticamente sin distinguir entre letras
+mayúsculas y minúsculas. Mostrar por pantalla el resultado de la
+ordenación.
+d) Ordenar el array arrStr con un comparador que determine que una
+cadena con más caracteres precede a otra que tenga menos. Mostrar por
+pantalla el resultado de la ordenación.
+e) Ordenar el array arrStr con un comparador que determine que una
+cadena con más vocales sigue a otra que
  * @author skril
  */
 public class APIManejoArrays1Ej19 {

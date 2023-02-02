@@ -7,7 +7,59 @@ package PruebaMetodos;
 import java.util.Arrays;
 
 /**
- *
+ *Escribe una clase de nombre PruebaMetodos2 con los métodos
+estáticos que se proponen a continuación. Incluir en el método main() de
+la clase las sentencias necesarias para comprobar el correcto
+funcionamiento de dichos métodos.
+11.Escribe un método, de nombre rellenarMatrizSecuencia2D, que reciba
+una matriz de enteros por parámetro y la rellene para que sus
+posiciones almacenen un valor que se irá incrementando en una
+unidad por columnas. La matriz se rellenará de manera que dos
+elementos consecutivos según la primera dimensión almacenen dos
+valores también consecutivos. Una matriz de 5 elementos en la
+primera dimensión y 5 en la segunda quedaría como sigue:
+0 5 10 15 20
+1 6 11 16 21
+2 7 12 17 22
+3 8 13 18 23
+4 9 14 19 24
+12.Escribe un método, de nombre mostrarMatrizID, que reciba por
+parámetro un array bidimensional (matriz) de enteros y muestre sus
+elementos por pantalla de forma que la primera dimensión de la matriz
+se corresponda con las filas y la segunda con las columnas.
+13.Escribe un método, de nombre matrizIntComoString, que reciba por
+parámetro un array bidimensional (matriz) de enteros y devuelva una
+cadena con la representación textual de la matriz recibida. La cadena
+dispondrá los elementos de la matriz de forma que la primera
+dimensión se corresponda con las filas y la segunda con las columnas.
+Programación - DAM U06 – Ejercicios4
+3
+14.Escribe un método, de nombre rellenarMatrizAsteriscos, que reciba por
+parámetro un valor entero que especificará el número de filas de
+asteriscos que albergará la matriz. La primera fila contendrá un solo
+asterisco situado en la posición central según la segunda dimensión
+de la matriz. Cada nueva fila contendrá dos asteriscos más y también
+se encontrarán centrados según la segunda dimensión de la matriz. El
+aspecto final que debe presentar la matriz si se recibe un número de
+filas de asteriscos sería el siguiente:
+*
+* * *
+* * * * *
+* * * * * * *
+* * * * * * * * *
+15.Escribe un método, de nombre obtenerSumaElementosMatriz, que
+reciba por parámetro un array bidimensional de números enteros y
+devuelva la suma de todos sus elementos.
+16.Escribe un método, de nombre obtenerDiagonales, que reciba por
+parámetro una matriz de valores enteros y devuelva una matriz con los
+valores de las dos diagonales principales de la matriz recibida.
+17.Escribe un método, de nombre obtenerLaterales, que reciba por
+parámetro una matriz de valores enteros y devuelva una matriz con los
+valores de los cuatro laterales -superior, izquierdo, derecho e inferior-,
+de la matriz recibida
+18.Escribe un programa que obtenga y muestre por pantalla una matriz
+de enteros con el siguiente aspecto.
+
  * @author skril
  */
 public class PruebaMetodos2 {
