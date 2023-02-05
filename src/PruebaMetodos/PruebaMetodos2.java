@@ -236,7 +236,7 @@ public class PruebaMetodos2 {
 
         for (int i = 0; i < Matriz.length; i++) {
             for (int j = 0; j < columnas; j++) {
-                Matriz[i][j] = j + 1;//ESTA MANERA ES MAS ÓPTIMA
+                Matriz[i][j] = j + 1;//ESTA MANERA ES MAS ÓPTIMA, el j+1 es para asginarle los valores de 1 ,2 ,3 ,4,5 y que luego vuelva a empzar 1,2,3,4 y luego 1,2,3 y asi sucesivamente
                 //Matriz[i][0] = 1;
                 //Matriz[i][1] = 2;
                 //Matriz[i][2] = 3;
